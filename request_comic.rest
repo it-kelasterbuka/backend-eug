@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/comic
+
+###
+GET http://localhost:3000/comic/3
+
+###
+POST http://localhost:3000/comic
+Content-Type: application/json
+
+{
+    "title": "One Piece",
+    "author": "Eiichiro Oda",
+    "genre": "Adventure",
+    "releaseDate": "1997-07-22"
+}
+
+
+###
+PUT http://localhost:3000/comic/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Naruto",
+    "author": "Masashi Kishimoto",
+    "genre": "Action",
+    "releaseDate": "1999-09-21"
+}
+
+###
+DELETE  http://localhost:3000/comic/3
